@@ -4,9 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tidal Bore Digital — Software, AI & Growth</title>
-  <meta name="description" content="We build clean, fast products for web & mobile. AI automations, dashboards, and growth tooling tailored to African markets." />
+  <meta name="description" content="Tidal Bore Digital builds clean, fast web & mobile apps, AI-powered automations, and growth tools tailored to African markets." />
 
-  <!-- Tailwind CDN (no build step needed) -->
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Tidal Bore Digital — Software, AI & Growth" />
+  <meta property="og:description" content="We build clean, fast products — from AI dashboards to mobile apps — tailored to Nigerian & Pan-African realities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://talktoudom.github.io/tidal-bore-digital/" />
+  <meta property="og:image" content="https://talktoudom.github.io/tidal-bore-digital/favicon.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tidal Bore Digital — Software, AI & Growth" />
+  <meta name="twitter:description" content="Building clean, fast web & mobile apps, AI automations, and growth engineering for African markets." />
+  <meta name="twitter:image" content="https://talktoudom.github.io/tidal-bore-digital/favicon.png" />
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -18,10 +36,7 @@
   <!-- NAVBAR -->
   <header class="sticky top-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
     <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-2">
-        <img src="logo.svg" alt="Tidal Bore Digital logo" class="h-8 w-auto max-h-8">
-        <span class="font-semibold tracking-wide">Tidal Bore Digital</span>
-      </a>
+      <a href="/" class="font-semibold tracking-wide text-lg">Tidal Bore Digital</a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#services" class="hover:text-[#3aa5ff]">Services</a>
         <a href="#contact" class="hover:text-[#3aa5ff]">Contact</a>
@@ -106,9 +121,7 @@
       <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8">
         <div>
           <h2 class="text-2xl md:text-3xl font-semibold">Let’s Build</h2>
-          <p class="mt-3 text-neutral-300">
-            Tell us a bit about your project and we’ll get back within 1 business day.
-          </p>
+          <p class="mt-3 text-neutral-300">Tell us a bit about your project and we’ll get back within 1 business day.</p>
           <ul class="mt-6 space-y-2 text-sm text-neutral-300">
             <li>Email: <a class="underline" href="mailto:hello@tidalboredigital.com.ng">hello@tidalboredigital.com.ng</a></li>
             <li>GitHub: <a class="underline" href="https://github.com/talktoudom" target="_blank">@talktoudom</a></li>
@@ -116,7 +129,7 @@
           </ul>
         </div>
 
-        <!-- ✅ Contact Form with Thank-You -->
+        <!-- Contact Form with Thank-You -->
         <form id="contact-form" action="https://formspree.io/f/mnnbgqpe" method="POST" class="rounded-2xl bg-neutral-900/60 backdrop-blur border border-neutral-800 p-6 shadow-xl">
           <div class="grid gap-4" id="form-fields">
             <input type="text" name="name" required placeholder="Your name" class="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-[#1f81e6]" />
@@ -126,7 +139,6 @@
               Send Message
             </button>
           </div>
-          <!-- Thank-you message (hidden by default) -->
           <p id="form-success" class="hidden mt-4 text-green-400 font-medium">✅ Thanks! Your message has been sent. We’ll be in touch soon.</p>
         </form>
       </div>
@@ -152,10 +164,8 @@
   </a>
 
   <script>
-    // year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // form success handler
     const form = document.getElementById("contact-form");
     const fields = document.getElementById("form-fields");
     const successMsg = document.getElementById("form-success");
